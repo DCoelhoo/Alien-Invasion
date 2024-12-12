@@ -12,8 +12,8 @@ class Enemy:
         self.image = pygame.image.load('images/enemy.bmp')
         self.rect = self.image.get_rect()
 
-        #Start each new enemy at the center of the screen
-        self.rect.center = self.screen_rect.center
+        #Start each new enemy at the midtop of the screen
+        self.rect.midtop = self.screen_rect.midtop
     
     def blitme(self):
         """ Draw the enemy ship at its current location """
